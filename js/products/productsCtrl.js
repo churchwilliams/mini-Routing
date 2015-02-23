@@ -1,10 +1,9 @@
-var app = angular.module('miniRouting');
+var app = angular.module('theApp');
 
-app.controller('productsCtrl', function($scope, $routeParams, productsService) {
+app.controller('productsCtrl', function($scope, $routeParams, productsService){
 	if($routeParams.id === 'shoes'){
 		$scope.productData = productsService.shoeData;
-	}
-	else if ($routeParams.id === 'socks') {
+	} else if ($routeParams.id === 'socks'){
 		$scope.productData = productsService.sockData;
 	}
 });

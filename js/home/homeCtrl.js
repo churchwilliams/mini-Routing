@@ -1,5 +1,5 @@
-var app = angular.module('miniRouting');
+var app = angular.module('theApp');
 
-app.controller('homeCtrl', function($scope) {
+app.controller('homeCtrl', function($scope){
 
 });
